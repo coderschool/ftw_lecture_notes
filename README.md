@@ -1,6 +1,6 @@
 # Lecture Notes
 
-Lecture Notes for Full-stack Web Bootcamp at CoderSchool
+Lecture Notes for Full-stack Web Bootcamp at CoderSchool.
 
 **HTML&CSS**
 * Updating..

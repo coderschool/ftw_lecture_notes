@@ -93,6 +93,7 @@ The spread operator literally spreads all the key value pairs of an object. In R
     />
   </li>)}
 </ul>
+
 // Rather than passing all properties of an object property by property, 
 // you can use the spread operator to pass all key value pairs to the next component.
 <ul>
@@ -100,6 +101,7 @@ The spread operator literally spreads all the key value pairs of an object. In R
     <User {...user} />
   </li>)}
 </ul>
+
 // ...
 const User = ({ name, nationality }) =>
   <span>{name} from {nationality}</span>;
@@ -117,6 +119,7 @@ const c = {d: [true, false]}
 console.log({a, b, c})
 // this is the same as:
 console.log({a: a, b: b, c: c})
+
 // in React:
 function Counter({initialCount, step}) {
   const [count, setCount] = useCounter({initialCount, step})
@@ -228,12 +231,16 @@ Also known as the "Elvis Operator," this allows you to safely access properties 
 const streetName = user && user.address && user.address.street.name
 // what we can do now:
 const streetName = user?.address?.street?.name
+
 // this will run even if options is undefined (in which case, onSuccess would be undefined as well)
 const onSuccess = options?.onSuccess
+
 // this will run without error even if onSuccess is undefined (in which case, no function will be called)
 onSuccess?.({data: 'yay'})
+
 // and we can combine those things into a single line:
 options?.onSuccess?.({data: 'yay'})
+
 // and if you are 100% certain that onSuccess is a function if options exists
 // then you don't need the extra ?. before calling it. Only use ?. in situations
 // where the thing on the left might not exist.
@@ -292,6 +299,7 @@ const dogs = [
     ],
   },
 ]
+
 dogs.find(dog => dog.name === 'Bernese Mountain Dog')
 // {id: 'dog-2', name: 'Bernese Mountain Dog', ...etc}
 dogs.some(dog => dog.temperament.includes('Aggressive'))
@@ -448,6 +456,7 @@ function promises() {
   failingPromise.then(log, logError)
   recoveredPromise.then(log, logError)
 }
+
 function asyncAwaits() {
   async function successfulAsyncAwait() {
     const result = await timeout(100)
@@ -470,12 +479,15 @@ function asyncAwaits() {
   failedAsyncAwait().then(log, logError)
   recoveredAsyncAwait().then(log, logError)
 }
+
 function log(...args) {
   console.log(...args)
 }
+
 function logError(...args) {
   console.error(...args)
 }
+
 // This is the mothership of all things asynchronous
 function timeout(duration = 0, shouldReject = false) {
   return new Promise((resolve, reject) => {
@@ -488,6 +500,7 @@ function timeout(duration = 0, shouldReject = false) {
     }, duration)
   })
 }
+
 // in React:
 function GetGreetingForSubject({subject}) {
   const [isLoading, setIsLoading] = React.useState(false)
