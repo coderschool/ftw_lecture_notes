@@ -1,22 +1,5 @@
 # CSS - Floating, Positioning and Stacking
 
-## Floating
-
-**Floating** an element moves it to either the left or right side as far as possible. The following siblings will **wrap around** the floating element. This layout is common in newspapers and magazines, so floats were added to CSS to achieve this effect.
-
-![](../images/css_float.jpg)
-
-Property: **float**
-
-Values: `left` | `right` | `none`
-
-Default: `none`
-
-Applies to: all elements
-
-Inherits: no
-
-
 ## Types of positioning
 
 Positioning is a way to specify the location of an element anywhere on the page with pixel precision.
@@ -61,6 +44,22 @@ Applies to: positioned elements
 Inherits: no
 
 The value of the `z-index` property is a number (positive or negative). The higher the number, the higher the element will appear in the stack (that is, closer to your nose).
+
+## Floating
+
+**Floating** an element moves it to either the left or right side as far as possible. The following siblings will **wrap around** the floating element. This layout is common in newspapers and magazines, so floats were added to CSS to achieve this effect.
+
+![](../images/css_float.jpg)
+
+Property: **float**
+
+Values: `left` | `right` | `none`
+
+Default: `none`
+
+Applies to: all elements
+
+Inherits: no
 
 ## Additional reading
 

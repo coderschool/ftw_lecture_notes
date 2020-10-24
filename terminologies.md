@@ -2,6 +2,8 @@
 
 ## A
 
+- **Absolute length units (CSS)**: fixed to a physical length.
+
 - **API (Application Programming Interface)**: A set of subroutine definitions that describe how to use or interact with a system. Traditionally, this includes method names and parameters (in the case of a programming language) or URLs and query parameters (in the case of an HTTP API).
 
 ## B
@@ -10,13 +12,20 @@
 - **`box-sizing: border-box`**: change the box model so that the borders and the paddings are no longer added to the total width or the total height that we specify for a box.
 ## C
 
+- **Child combinator `A>B` (CSS)**: Matches element B that is a child of element A.
+
 - **client-side**, **server-side** applications: These terms are used to indicate which machine is doing the processing. Client-side applications run on the user’s machine (also referred to as the frontend), while server-side applications and functions use the processing power of the server computer (the backend).
+
+- **Compound selector `A, B`**: Matches elements A and B.
 
 - **CSS**: Cascading Stylesheets is the code that you use to style your website.
 
 ## D
 
 - **Declaration (CSS)**: is a single rule which specifies which of the element's properties you want to style.
+
+- **Descendant combinator `A B` (CSS)**: Matches B only if it is descendant of element A.
+
 - **DNS (Domain Name System)**: DNS allows us to refer to servers by their domain name. Matching the text domain names to their respective numeric IP addresses is the job of a separate **DNS server**. If you think of an IP address as a telephone number, the DNS server would be the phonebook.
 
 - **DOM (Document Object Model)**: The document structure, the way elements follow each other or nest within one another, creates relationships between elements. DOM is also the foundation upon which we add presentation instructions with style sheets and behaviors with JavaScript.
@@ -61,6 +70,8 @@
 ## M
 ## N
 
+- **Next-sibling combinator `A+B` (CSS)**: Matches element B that immediately follows element A, where A and B share the same parent.
+
 - **Normalize CSS**: Normalize CSS in order to make cross browser reset (every browser render the page in exact same way).
 
 ## O
@@ -78,12 +89,16 @@
 ## Q
 ## R
 
+- **Relative length units (CSS)**: specify a length in relation to something else.
+
 - **Responsive Web Design (RWD)**: is a strategy for providing appropriate layouts to devices based on the size of the viewport (browser window).
 
 ## S
 - **Selector (CSS)**: defines the element(s) to be styled.
 
 - **servers**: The computers that make up the internet. Because they “serve up” documents upon request, these computers are known as **servers**. The role of server is to wait for a request for information, and then retrieve and send that information back as quickly as possible.
+
+- **Subsequent-sibling combinator `A~B` (CSS)**: Matches element B that is preceded by A, where A and B share the same parent.
 
 ## T
 ## U

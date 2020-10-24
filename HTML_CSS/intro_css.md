@@ -55,11 +55,16 @@ The important part of the syntax:
 
 | Selector | Type | Description |
 |:--|:--|:--|
+| `:root` | Tree-structural pseudo-class selector | Selects an element that is the root of the document. In HTML, it is the html element. |
 | `:link` | Link pseudo-class selector | Specifies a style for links that have not yet been visited. |
 | `:visited` | Link pseudo-class selector | Specifies a style for links that have already been visited. |
 | `:active` | User action pseudo-class selector | Selects any element that has been activated by the user, such  |as a link as it is being clicked. |
 | `:hover` | User-action pseudo-class selector | Specifies a style for elements (typically links) that appear  |when the mouse is placed over them. |
 | `:focus` | User action pseudo-class selector | Selects any element that currently has the input focus, such as  |a selected form input. |
+| `:first-child` | Structural pseudo-class selector | Selects an element that is the first child of its parent element. |
+| `:last-child` | Structural pseudo-class selector | Selects an element that is the last child of its parent element. |
+| `:only-child` | Structural pseudo-class selector | Selects an element that is the only child of its parent. |
+| `:nth-child()` | Structural pseudo-class selector | Selects an element that is the nth child of its parent. The notation can include a number, a notation, or the keywords odd or even. |
 
 ## Attaching the styles to the document
 
@@ -81,16 +86,6 @@ There are three ways that style rules can be applied to an HTML document:
 - **External style sheets**: The external `.css` file that contains a number of style rules. The `.css` document is then linked to the HTML documents. This is the most powerful and preferred method for attaching style sheets to content.
 
 ## Important concepts
-
-### The box model
-
-![](../images/css_box_model.png)
-
-CSS layout is mostly based on the **box model**. Each box taking up space on your page has properties like:
-
--   `padding`, the space around the content. In the example below, it is the space around the paragraph text.
--   `border`, the solid line that is just outside the padding.
--   `margin`, the space around the outside of the border.
 
 ### Inheritance
 
@@ -163,6 +158,82 @@ Each rule may be straightforward on its own, but what happens when two rules pro
   }
   /* mnemonic: LoVe/HAte */
   ```
+
+### Absolute & Relative units
+
+**Absolute length units** are fixed to a physical length.
+
+| Unit |	Name |	Equivalent to |
+|:--|:--|:--|
+| cm |	Centimeters |	1cm = 96px/2.54 |
+| mm |	Millimeters |	1mm = 1/10th of 1cm |
+| in |	Inches |	1in = 2.54cm = 96px |
+| pc |	Picas |	1pc = 1/16th of 1in |
+| pt |	Points |	1pt = 1/72th of 1in |
+| px |	Pixels |	1px = 1/96th of 1in |
+
+**Relative length units** specify a length in relation to something else.
+
+| Unit | Relative to |
+| --- | --- |
+| `em` | Font size of the element. |
+| `rem` | Font size of the root element. |
+| `vw` | 1% of viewport's width. |
+| `vh` | 1% of viewport's height. |
+| `vmin` | 1% of viewport's smaller dimension. |
+| `vmax` | 1% of viewport's larger dimension. |
+
+**The `calc()` function** lets you do basic arithmetic(`+`, `-`, `*`, `/`,) with two or more values. This is particularly useful for combining values that are measured in different units. For example 
+
+```css
+:root {
+  font-size: calc(0.5em + 1vw);
+}
+```
+The 0.5 em here operates as a sort of minimum font size, and the 1 vw adds a responsive scalar.
+
+**The `var()` function** allows the use of variables. In this example, we define a variable named `--main-font` for the whole page, and apply it to all `p` elements:
+
+```css
+:root {
+  --main-font: Helvetica, Arial, sans-serif;
+  --brand-color: #369;
+}
+
+p {
+  font-family: var(--main-font);
+  color: var(--brand-color, blue);
+}
+```
+The `var()` function accepts a second parameter, which specifies a fallback value. In the example, if the `--brand-color` variable is not defined, so the fallback value blue is used.
+
+### The box model
+
+![](../images/css_box_model.png)
+
+CSS layout is mostly based on the **box model**. Each box taking up space on your page has properties like:
+
+-   `padding`, the space around the content. In the example below, it is the space around the paragraph text.
+-   `border`, the solid line that is just outside the padding.
+-   `margin`, the space around the outside of the border.
+
+**Using `box-sizing: border-box`** to specify width to include the padding and borders. By default, `box-sizing` is set to the value `content-box` (`height` and `width` only set the size of the content box).
+
+**Using universal `border-box` sizing**:
+
+```css
+/* Applies border box sizing to the root element */
+:root {
+  box-sizing: border-box;          
+}
+
+/* Tells all other elements and pseudo-element to inherit their box sizing */
+*,
+::before,
+::after {
+  box-sizing: inherit;             
+}
+```
 
 ## References
 
