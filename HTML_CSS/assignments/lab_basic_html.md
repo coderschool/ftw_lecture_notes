@@ -1,4 +1,4 @@
-# Basic HTML
+# Lab - Basic HTML
 
 **Requirements:**
 
@@ -19,8 +19,6 @@
   <h3>HTML is amazing</h3>
 </section>
 ```
-
-- Make your document look nicely.
 
 ![Example](../../images/html_assignment_sample.png)
 
