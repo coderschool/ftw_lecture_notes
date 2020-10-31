@@ -77,6 +77,14 @@ These are the list of extensions that will be useful:
 
 ![Bracket Pair](./images/vscodeex_bracket_pair.png)
 
+- **Auto Close Tag**: Automatically add HTML/XML close tag
+
+![Auto Close Tag](./images/vscodeex_auto_close_tag.png)
+
+- **Auto Rename Tag**: Automatically rename pair HTML/XML tag
+
+![Auto Rename Tag](./images/vscodeex_auto_rename_tag.png)
+
 - **Color Highlight**: Highlight web colors in your editor.
 
 ![Color Highlight](./images/vscodeex_color_highlight.png)

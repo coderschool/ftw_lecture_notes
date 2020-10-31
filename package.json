@@ -1,0 +1,25 @@
+{
+  "name": "ftw_lecture_notes",
+  "version": "1.0.0",
+  "description": "Lecture Notes for Full-stack Web Bootcamp at CoderSchool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderschool/ftw_lecture_notes.git"
+  },
+  "author": "Minh Do",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderschool/ftw_lecture_notes/issues"
+  },
+  "homepage": "https://github.com/coderschool/ftw_lecture_notes#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "prompts": "^2.4.0"
+  }
+}

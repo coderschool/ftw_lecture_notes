@@ -10,6 +10,7 @@
 
 - **Block HTML element**: A block-level element occupies the entire width of its parent element (container), thereby creating a “block.”
 - **`box-sizing: border-box`**: change the box model so that the borders and the paddings are no longer added to the total width or the total height that we specify for a box.
+
 ## C
 
 - **Child combinator `A>B` (CSS)**: Matches element B that is a child of element A.
@@ -17,6 +18,8 @@
 - **client-side**, **server-side** applications: These terms are used to indicate which machine is doing the processing. Client-side applications run on the user’s machine (also referred to as the frontend), while server-side applications and functions use the processing power of the server computer (the backend).
 
 - **Compound selector `A, B`**: Matches elements A and B.
+
+- **Content Delivery Network (CDN)**: The objective of CDN is to provide users with content that is highly available. The content is often hosted using a large, distributed set of servers.
 
 - **CSS**: Cascading Stylesheets is the code that you use to style your website.
 
@@ -32,6 +35,8 @@
 
 ## E
 
+- **em**: CSS's unit of measurement that is relative to the parent of the element to which it is applied. The problem with using em is that it increases your code's complexity, as the nesting of elements makes size calculation more difficult.
+
 - **Embedded style sheets (CSS)**: are placed in a HTML document via the **style** element. The **style** element must be placed in the **head** of the document
 
 - **External style sheets (CSS)**: The external `.css` file that contains a number of style rules. The `.css` document is then linked to the HTML documents. This is the most powerful and preferred method for attaching style sheets to content.
@@ -41,6 +46,7 @@
 - **float (CSS property)**: **Floating** an element moves it to either the left or right side as far as possible. The following siblings will **wrap around** the floating element. This layout is common in newspapers and magazines, so floats were added to CSS to achieve this effect.
 
 ## G
+
 ## H
 
 - **HTML**: HyperText Markup Language. HTML is used to create electronic documents (pages) that are displayed on the Web.
@@ -65,9 +71,13 @@
 - **Inline styles (CSS)**: Applying properties and values to a single element by using **style** attribute in the element itself.
 
 ## J
+
 ## K
+
 ## L
+
 ## M
+
 ## N
 
 - **Next-sibling combinator `A+B` (CSS)**: Matches element B that immediately follows element A, where A and B share the same parent.
@@ -86,21 +96,30 @@
 
 - **Property value (CSS)**: is one out of many possible appearances for a given property. (For example there are many `color` values, like `red`, `blue`, etc.)
 
+- **pixel (px)**: CSS's unit of measurement. For display of 96 dots per inch (dpi), 1 px will equal an actual pixel on the screen. Well-known problem with px: websites using px may render incorrectly, as users change the size of the browser's base font.
+
 ## Q
+
 ## R
 
 - **Relative length units (CSS)**: specify a length in relation to something else.
 
+- **rem**: CSS's unit of measurement that's relative to the page root element. `rem` aims to address both `em`'s and `px`'s weakness.
+
 - **Responsive Web Design (RWD)**: is a strategy for providing appropriate layouts to devices based on the size of the viewport (browser window).
 
 ## S
+
 - **Selector (CSS)**: defines the element(s) to be styled.
+
+- **Shorthand rules (CSS)**: CSS properties that let you set the values of several other CSS properties simultaneously. When possible, shorthand rules are always the preferred option.
 
 - **servers**: The computers that make up the internet. Because they “serve up” documents upon request, these computers are known as **servers**. The role of server is to wait for a request for information, and then retrieve and send that information back as quickly as possible.
 
 - **Subsequent-sibling combinator `A~B` (CSS)**: Matches element B that is preceded by A, where A and B share the same parent.
 
 ## T
+
 ## U
 
 - **User Interface (UI)**: is the presentation of a product, how it looks and feels.
@@ -115,10 +134,7 @@
 - **web**: originally called the **World Wide Web(www)**, is just one of the ways information can be shared over the internet. It allows documents to be linked to another via **hypertext** links thus forming a huge "web" of connected information.
 
 ## X
+
 ## Y
+
 ## Z
-
-
-
-
-
