@@ -26,10 +26,12 @@ In HTML, the capitalization of element names is not important. So `<img>`, `<Img
 
 ### Block and inline elements
 
+Every HTML element has a default `display` value. `block` and `inline` are the default values for most of the elements.
+
 This is an important distinction:
 
-- Block elements stack on top of each other. Each one starts and ends on its own line.
-- Inline elements do not start new lines; they just go with the flow.
+- A block element always starts on a new line and stretches out to the left and right as far as it can. Block elements stack on top of each other. Each one starts and ends on its own line.
+- Inline elements do not start new lines and take up only the necessary width; they just go with the flow.
 
 Most elements are block elements. Some common inline tags you might see used:
 
@@ -42,12 +44,12 @@ Most elements are block elements. Some common inline tags you might see used:
 The following information in the source document will be ignored when it is viewed in a browser:
 
 - **Multiple-character white spaces**: When a browser encounters more than one consecutive white spaces, it displays a single space.
-  Example, if the document contains `hello,       world      !`, the browser displays `hello, world !`.
+  Example, if the document contains `hello, world !`, the browser displays `hello, world !`.
 
 - **Line breaks & tabs**:
   Browsers convert line breaks and tabs to white spaces, so following the earlier "ignore multiple white spaces" rule, they have no effect on formatting the page.
 
-- **Text in comments**: 
+- **Text in comments**:
   Browsers do not display text between the special `<!--` and `-->` tags used to denote a comment. Comments are useful for labeling and organizing long documents, particularly when they are shared by a team of developers. Although the browser will not display comments in the web page, readers can see them if they "view source," so be sure that the comments you leave are appropriate for everyone.
 
 - **Unrecognized markup**:
@@ -79,11 +81,12 @@ The document structure, the way elements follow each other or nest within one an
 
 HTML5 has a variety of semantic tags that provide additional meaning through descriptive naming, available for us to use. They don’t provide any visual difference, but they can make our code more understandable and clear to other developers (and our future selves) by organizing content.
 
-![](../images/html_semantic.jpg)
+![](../images/html_semantic.png)
 
 Before we had semantic tags like `<main>`, `<section>` and more, developers would use `<div>` tags to organize content. `<div>`’s are still really useful elements, but we should aim to use more semantic tags for organizing large blocks of your HTML code.
 
 When we want to convey semantic meaning, we can use one the following containing elements:
+
 - header
 - nav
 - section
@@ -101,4 +104,3 @@ When we want to convey semantic meaning, we can use one the following containing
 ## Additional reading
 
 - [8 best practices to write clean HTML code](https://medium.com/@sergimarquez/8-best-practices-to-write-clean-html-code-1cd407e2a7ec)
-

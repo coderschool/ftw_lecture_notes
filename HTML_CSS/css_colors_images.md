@@ -4,11 +4,11 @@
 
 CSS4 supports for a set of [140 color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value):
 
-![](../images/css_color_names.png)
+![css_color_names](../images/css_color_names.png)
 
 Names are easy, but as you can see, they are limited. By far, the most common way to specify a color is by its **RGB value**. It also gives you millions of colors to choose from.
 
-![](../images/css_rgb_model.png)
+![css_rgb_model](../images/css_rgb_model.png)
 
 CSS allows RGB color values to be specified in a number of formats:
 
@@ -51,7 +51,7 @@ color: #FC0;  or  color: #936;
 
 RGBa color allows you to specify a color and make it as transparent or as opaque as you like. The “a” in “RGBa” stands for alpha, which is an additional channel that controls the level of transparency
 
-![](../images/css_rgba.png)
+![css_rgba](../images/css_rgba.png)
 
 ## Images
 
@@ -123,13 +123,13 @@ You can use `repeating-linear-gradient()` to create stripes in CSS. Example:
 
 By default, the gradient is centered in the element, transitioning evenly to its corners. More examples:
 
-![](../images/css_radial_gradient.jpg)
+![css_radial_gradient](../images/css_radial_gradient.png)
 
 ## Shadows
 
 Two properties that create shadows are `box-shadow`, which creates a shadow of an element’s box shape, and `text-shadow`, which creates a shadow of rendered text.
 
-![](../images/css_box-shadow.jpg)
+![](../imshadowages/css_box-shadow.png)
 
 Example:
 
@@ -213,7 +213,7 @@ Blend modes in five basic categories
 ```css
 .blend {
   min-height: 400px;
-  background-image: url("images/scratches.png"), url("images/bear.jpg");
+  background-image: url("images/scratches.jpg"), url("images/bear.jpg");
   background-size: 200px, cover;
   background-repeat: repeat, no-repeat;
   background-position: center center;
