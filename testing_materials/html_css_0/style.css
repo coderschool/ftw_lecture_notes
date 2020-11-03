@@ -1,0 +1,11 @@
+.pizza {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.pizza {
+  max-width: 800px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.2);
+}

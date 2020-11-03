@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML CSS Example</title>
   </head>
   <body>
     <!-- Start with html:5 + tab -->
@@ -13,5 +19,38 @@
       <input type="text" name="q" />
       <button type="Submit">Search</button>
     </form> -->
+
+    <!-- Pizza card -->
+    <div class="pizza">
+      <div class="pizza-hero">
+        <img
+          src="https://images.unsplash.com/photo-1474600056930-615c3d706456?ixlib=rb-0.3.5&s=dc82336ad3e3873b0a81e9389d346916&auto=format&fit=crop&w=1952&q=80"
+          alt="pizza"
+        />
+      </div>
+
+      <div class="pizza-content">
+        <div class="pizza-title">
+          <h1 class="pizza-name">Vegetable 👌</h1>
+          <div class="pizza-tag tag-1">#vegetarian</div>
+          <div class="pizza-tag tag-2">#italian</div>
+        </div>
+
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          voluptas id reiciendis quia voluptatibus praesentium eum, blanditiis
+          possimus quas provident consequatur illo tempora consequuntur, non
+          tenetur molestiae sunt saepe similique?
+        </div>
+
+        <div class="pizza-details">
+          <p class="pizza-detail"><span class="emoji">🍕</span> 850 kcal</p>
+          <p class="pizza-detail"><span class="emoji">🕗</span> 30 min</p>
+          <p class="pizza-detail"><span class="emoji">⭐</span> 4.7 / 5</p>
+        </div>
+      </div>
+
+      <div class="pizza-price">$11.99</div>
+    </div>
   </body>
 </html>

@@ -177,6 +177,12 @@ When you apply multiple background images, those listed first render in front of
 
 ### Tinting an image
 
+![Blend mode tinting](../images/css_blend_mode_tinting.png)
+
+```html
+<div class="blend"></div>
+```
+
 ```css
 .blend {
   min-height: 400px;
@@ -209,6 +215,9 @@ Blend modes in five basic categories
 |                | exclusion   | Similar to difference, with less contrast.                                                           |
 
 ### Adding texture to image
+
+![CSS Blend Mode scratch](../images/css_blend_mode_scratch.png)
+![CSS Blend Mode Texture](../images/css_blend_mode_texture.png)
 
 ```css
 .blend {
@@ -255,6 +264,8 @@ CSS:
   border-width: 0.1em 0;
 }
 ```
+
+![CSS Mix Blend](../images/css_blend_mode_mix_blend.png)
 
 ## Additional reading
 
