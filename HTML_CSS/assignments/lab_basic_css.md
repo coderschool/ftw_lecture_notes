@@ -14,7 +14,7 @@
 Given this HTML structure:
 
 ```html
-<div id="assignment1">
+<section id="assignment1">
   <h1 class="header">About Project Gutenberg</h1>
   <p id="para1">Project Gutenberg is an online library of free eBooks.</p>
   <p>
@@ -30,7 +30,7 @@ Given this HTML structure:
     and some of the beliefs that guide Project Gutenberg’s activities in
     fulfillment of that mission.
   </p>
-</div>
+</section>
 ```
 
 - Change the color of all `<p>` elements, example `#2c3e50`.
@@ -38,7 +38,7 @@ Given this HTML structure:
 - Change the color of class `header`, example `#e67e22`.
 - Change the background color of all `<h1>` elements, example `linen`.
 - Pick one pattern in [CSS3 Patterns](http://projects.verou.me/css3patterns/) and apply to the background of the page, example _Lined paper_.
-- With the font property: Set the <p> to "italic", "20px" and "Verdana".
+- With the font property: Set the `<p>` to "italic", "20px" and "Verdana".
 - Make the first letter of each paragraph 200% bigger and has different color, example `#27ae60`.
 - Hide the first `<h1>` element. It should still take up the same place as before. Hint: `visibility`.
 - Hide the first `<h1>` element. It should not take up any space. Hint: `display`.
@@ -52,9 +52,9 @@ Example:
 Given this HTML structure:
 
 ```html
-<div id="assignment2">
+<section id="assignment2">
   <a href="">Jump to the first assignment</a>
-</div>
+</section>
 ```
 
 - Change the attribute `href` of the `<a>` element so that it will take to the first assignment part on the page when user click on it.
@@ -69,7 +69,7 @@ Given this HTML structure:
 Given this HTML structure:
 
 ```html
-<div id="assignment3">
+<section id="assignment3">
   <ul>
     <li>
       Top level
@@ -93,7 +93,7 @@ Given this HTML structure:
       </ul>
     </li>
   </ul>
-</div>
+</section>
 ```
 
 - Set the `font-size` of this assignment to `16px`
@@ -114,8 +114,10 @@ Create a square box element that will always display as a square a little smalle
 Given this HTML structure:
 
 ```html
-<div class="box">Box 1</div>
-<div class="box content">Box 2</div>
+<section id="assignment5">
+  <div class="box">Box 1</div>
+  <div class="box content">Box 2</div>
+</section>
 ```
 
 And a set of colors: https://flatuicolors.com/palette/defo

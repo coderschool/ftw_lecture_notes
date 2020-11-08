@@ -14,8 +14,6 @@ Because flexbox layout is defined in terms of the _main axis_ and _cross axis_, 
 
 Let walkthrough the syntax with <a href="https://flexboxfroggy.com" target="_blank">this game</a>.
 
-Another <a href="" target="_blank">example</a>.
-
 ## Quick summary
 
 ### Container properties
@@ -30,9 +28,9 @@ Another <a href="" target="_blank">example</a>.
 
 ### Flex item properties
 
-- `flex: flex-frow flex-shrink flex-basis`: For the `flex-grow` and `flex-shrink` properties, the values 1 and 0 work like on/off switches, where 1 “turns on” or allows an item to grow or shrink, and 0 prevents it. The flex-basis property sets the starting dimensions, either to a specific size or a size based on the contents. Example `flex: 1 0 200px;`: a list item starts at 200 pixels wide, is allowed to expand to fill extra space (1), but is not allowed to shrink (0) narrower than the original 200 pixels.
+- `flex: flex-grow flex-shrink flex-basis`: For the `flex-grow` and `flex-shrink` properties, the values 1 and 0 work like on/off switches, where 1 “turns on” or allows an item to grow or shrink, and 0 prevents it. The flex-basis property sets the starting dimensions, either to a specific size or a size based on the contents. Example `flex: 1 0 200px;`: a list item starts at 200 pixels wide, is allowed to expand to fill extra space (1), but is not allowed to shrink (0) narrower than the original 200 pixels.
 
-- `flex-flow`: If you set the flex-grow value for all the items in a container to 1, the browser takes whatever extra space is available along the main axis and applies it equally to each item, allowing them all to stretch the same amount. If you specify a higher flex-grow integer to an item, it acts as a ratio that applies more space within that item. For example, giving “box4” the value `flex-grow: 3` means that it receives three times the amount of space than the remaining items set to `flex-grow: 1`
+- `flex-grow`: If you set the flex-grow value for all the items in a container to 1, the browser takes whatever extra space is available along the main axis and applies it equally to each item, allowing them all to stretch the same amount. If you specify a higher flex-grow integer to an item, it acts as a ratio that applies more space within that item. For example, giving “box4” the value `flex-grow: 3` means that it receives three times the amount of space than the remaining items set to `flex-grow: 1`
 <p align="center"><img src="../images/css_flex-grow.png" width="75%" /></p>
 <p align="center"><img src="../images/css_flex-grow2.png" width="75%" /></p>
 

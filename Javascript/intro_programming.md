@@ -2,15 +2,33 @@
 
 There are a few basic concepts you need to remember. They act like building blocks. To build a tall tower, you start first by putting block on top of block. Here are some of the essential programming building blocks:
 
-- **Operators** to perform actions on.
-
 - **Variables** to store data (aka state) during your program’s execution.
-
+- **Operators** to perform actions on.
 - **Conditionals** like if statements to make decisions.
-
 - **Loops** to repeat tasks until a condition stops being true.
-
 - **Functions** to organize your code into logical and reusable chunks.
+
+Let's write your first "Hello world!" JavaScript programm.
+
+- Open VSCode, create a new file called `hello.js`
+- Type in `console.log("Hello world!");`
+- Save the file
+- Open the Terminal on the same folder, run `node hello.js`
+- The text "Hello world!" will be printed out on the screen
+
+## Variables
+
+A variable is a place to store values. When we write scripts (a set of instructions for a computer to follow), we need to temporarily store small pieces of data. We store that data in variables. “Variable” is a good name for this concept because it indicates the stored data can change (or vary) each time a script is run.
+
+```javascript
+var amount = 9;
+amount = amount * 2;
+console.log(amount); // 18
+
+// Convert `amount` to a string
+amount = "$" + amount;
+console.log(amount); // "$18"
+```
 
 ## Operators
 
@@ -24,7 +42,7 @@ a = b * 2;
 - `=` and `*` are assignment and mathematic **operators**.
 - The statement `a = b * 2;` tells the computer to get the value stored in variable `b`, multiply that value by 2, then store the result back to the variable `a`.
 
-**Math**: `+`, `-`, `*`, `/`
+**Math**: `+` (Addition), `-` (Subtraction), `*` (Multiplication), `/` (Division), `**` (Exponentiation), `%` (Modulus or Remainder), `++` (Increment), `--` (Decrement)
 
 **Compound assignment**: `+=`, `-=`, `*=`, `/=`. For example `a += 2` is the same as `a = a + 2`
 
@@ -34,23 +52,38 @@ a = b * 2;
 
 **Logical**: `&&` (and), `||` (or)
 
-## Variables
+## Statements & Expressions
 
-JS uses **dynamic typing**, meaning variables can hold values of any type without any type enforcement.
+- **Statement**: A script is a series of instructions that a computer can follow one-by-one. Each _individual instruction_ is known as a statement. Each statement in JavaScript is followed by a semicolon.
 
 ```javascript
-var amount = 9;
-amount = amount * 2;
-console.log(amount); // 18
-
-// Convert `amount` to a string
-amount = "$" + amount;
-console.log(amount); // "$18"
+var a = 1;
+var b = a + 2;
+b = b + 3;
+console.log(b);
 ```
+
+- **Expressions**: An expression is a statement that results in a single value. Expressions can use operators to create this single value. Here are some example expressions:
+
+This expression results in "apple": `"ap" + "ple"`
+
+This expression results in 5: `2 + 3`
 
 ## Conditionals
 
-The `if` statement requires an expression in between the parentheses `()`.
+Sometimes we want to perform an action based on some kind of condition. In English, we can say “If this thing is true, then do that.” In JavaScript, conditionals are written very similarly and allow us to take a certain path in our program.
+
+Let’s now look at the basic structure of a conditional:
+
+```javascript
+if (expression) {
+  statements;
+} else if (expression) {
+  statements;
+} else {
+  statements;
+}
+```
 
 ```javascript
 var today = new Date().getDay();
@@ -64,60 +97,11 @@ if (today === 6) {
 }
 ```
 
-`switch` statement can be used as a shorthand for a series of `if..else` statements.
-
-```javascript
-switch (today) {
-  case 6:
-    console.log("Today is Saturday");
-    break;
-  case 0:
-    console.log("Today is Sunday");
-    break;
-  default:
-    console.log("Looking forward to the Weekend");
-}
-```
-
-You can put two cases to have the same action:
-
-```javascript
-switch (a) {
-  case 2:
-  case 10:
-    // some cool stuff
-    break;
-  case 42:
-    // other stuff
-    break;
-  default:
-  // fallback
-}
-```
-
 ## Loops
 
 Repeating a set of actions until a certain conditions fails is the job of programming loops.
 
-```javascript
-while (numOfCustomers > 0) {
-  console.log("How may I help you?");
-
-  // help the customer...
-
-  numOfCustomers = numOfCustomers - 1;
-}
-
-// versus:
-
-do {
-  console.log("How may I help you?");
-
-  // help the customer...
-
-  numOfCustomers = numOfCustomers - 1;
-} while (numOfCustomers > 0);
-```
+**`for` loop**
 
 Sometimes you are looping for the intended purpose of counting a certain set of numbers, like from 0 to 9 (10 numbers). You can do that by setting a loop iteration variable like `i` at value 0 and incrementing it by 1 each iteration.
 
@@ -128,21 +112,21 @@ for (var i = 0; i <= 9; i = i + 1) {
 // 0 1 2 3 4 5 6 7 8 9
 ```
 
-## Functions
-
-A function is generally a named section of code that can be “called” by name, and the code inside it will be run each time.
+**`while` loop**
 
 ```javascript
-function name(parameter1, parameter2, parameter3) {
-  // code to be executed
+while (numOfCustomers > 0) {
+  console.log("How may I help you?");
+
+  // help the customer...
+
+  numOfCustomers = numOfCustomers - 1;
 }
 ```
 
-Function **parameters** are listed inside the parentheses `()` in the function definition.
+## Functions
 
-Function **arguments** are the **values** received by the function when it is invoked.
-
-Inside the function, the arguments (the parameters) behave as local variables.
+A function is generally a named section of code that can be “called” by name, and the code inside it will be run each time.
 
 ```javascript
 function toCelsius(fahrenheit) {
@@ -154,76 +138,16 @@ Functions can be used the same way as you use variables, in all types of formula
 
 ```javascript
 var x = toCelsius(77);
+// String concatenation
 var text = "The temperature is " + x + " Celsius";
+// Template literal
+// var text = `The temperature is ${x} Celsius`;
 ```
 
 You can use the function directly, as a variable value:
 
 ```javascript
 var text = "The temperature is " + toCelsius(77) + " Celsius";
-```
-
-## Scope
-
-In JS, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Only code inside that function can access that function’s local variables.
-
-Wherever a `var` appears inside a scope, that declaration is taken to belong to the entire scope and accessible everywhere throughout. This behavior is called **hoisting**.
-
-```javascript
-var a = 2;
-
-foo(); // works because `foo()`
-// declaration is "hoisted"
-
-function foo() {
-  a = 3;
-
-  console.log(a); // 3
-
-  var a; // declaration is "hoisted"
-  // to the top of `foo()`
-}
-
-console.log(a); // 2
-```
-
-A variable name has to be unique within the same scope—there can’t be two different a variables sitting right next to each other. But the same variable name a could appear in different scopes:
-
-```javascript
-function one() {
-  // this `a` only belongs to the `one()` function
-  var a = 1;
-  console.log(a);
-}
-
-function two() {
-  // this `a` only belongs to the `two()` function
-  var a = 2;
-  console.log(a);
-}
-
-one(); // 1
-two(); // 2
-```
-
-Also, a scope can be nested inside another scope. If one scope is nested inside another, code inside the inner scope can access variables from either scope.
-
-```javascript
-function outer() {
-  var a = 1;
-
-  function inner() {
-    var b = 2;
-
-    // we can access both `a` and `b` here
-    console.log(a + b); // 3
-  }
-
-  inner();
-
-  // we can only access `a` here
-  console.log(a); // 1
-}
-
-outer();
+// Template literal
+// var text = `The temperature is ${toCelsius(77)} Celsius`;
 ```

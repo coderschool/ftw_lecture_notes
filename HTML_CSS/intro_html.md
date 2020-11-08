@@ -69,7 +69,7 @@ The minimal structure of an HTML document includes `head` and `body` contained w
 
 3. Within the `html` element, the document is divided into a `head` and a `body`. The `head` element contains elements that pertain to the document that are not rendered as part of the content, such as its title, style sheets, scripts, and metadata.
 
-4. **meta elements** provide document metadata, information about the document. In this case, it specifies the character encoding (a standardized collection of letters, numbers, and symbols) used in the document as Unicode version UTF-8 (see the sidebar "Introducing Unicode").
+4. **meta elements** provide document metadata, information about the document. In this case, it specifies the character encoding (a standardized collection of letters, numbers, and symbols) used in the document as Unicode version UTF-8.
 
 5. The `title` element is required in the `head`. Every document must contain a descriptive title.
 

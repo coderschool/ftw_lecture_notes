@@ -12,7 +12,7 @@
 
 - **Git and Github** for version control and repository hosting service. Getting started [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-- **NodeJS** as the Javascript run-time environment. Go to the [Node home page](http://nodejs.org/). Click the big green button that has a version number followed by “LTS (Recommended for Most Users).”
+- **NodeJS** as the JavaScript run-time environment. Go to the [Node home page](http://nodejs.org/). Click the big green button that has a version number followed by “LTS (Recommended for Most Users).”
 
 - Using the Terminal (also called a console or command prompt). If you’re not friends with your terminal, I highly recommend you spend some time familiarizing yourself with your terminal of choice. If you’re on macOS or Linux, you already have it. For Windows user, Git helpfully includes a "Git Bash" shell, which provides a Unix-like terminal experience.
 

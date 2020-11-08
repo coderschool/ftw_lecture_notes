@@ -1,10 +1,10 @@
-# Javascript on the browser
+# JavaScript on browsers
 
-In this session, we will learn JS as a way to add interactivity to a page. Whereas the "structural" layer of a page is the HTML markup, and the "presentational" layer of a page is made up of CSS, the third "behavioral" layer is made up of Javascript.
+In this session, we will learn JS as a way to add interactivity to a page. Whereas the "structural" layer of a page is the HTML markup, and the "presentational" layer of a page is made up of CSS, the third "behavioral" layer is made up of JavaScript.
 
 All of the elements, attributes, and text on a web page can be accessed by scripts using the DOM (Document Objet Model).
 
-## Adding Javascript to a page
+## Adding JavaScript to a page
 
 As with CSS, you can embed a script right in a document or keep it in an external file and link it to the page. Both methods use the `script` element.
 
@@ -245,7 +245,7 @@ parentDiv.removeChild(removeMe);
 
 ## Events
 
-An event is an action that can be detected with Javascript, such as when user clicks an element or just moves the mouse over it. There are 3 ways to register event handlers for a DOM element.
+An event is an action that can be detected with JavaScript, such as when user clicks an element or just moves the mouse over it. There are 3 ways to register event handlers for a DOM element.
 
 - As an HTML attribute
 
