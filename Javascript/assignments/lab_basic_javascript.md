@@ -140,7 +140,7 @@ var workingHours = [6, 6, 7, 7, 8, 8, 6, 7, 8, 7];
 
 - Iterate over the array, and print out `Peter earned $... today!` each day.
 - Calculate how much Peter made in the last two weeks.
-- Peter realizes that every day his working hour is a random integer number between 6 to 8 inclusively. And he wants to estimate how much he can make in one year (approximately 50 weeks, 5 working days per week). Let use the function you made in Assignment 1 to create an array that contains 250 numbers represent Peter's working hours in one year. Use the array to calculate Peter's estimated yearly income.
+- Peter realizes that every day his working hour is a random integer number between 6 to 8 inclusively. And he wants to estimate how much he can make in one year (approximately 50 weeks, 5 working days per week). Let use the function you made in Assignment 1 to create an array that contains 250 numbers represent Peter's working hours in one year. Use the array to calculate Peter's estimated yearly income. Hint: find the way to _add an item to the end of an array_ in the Docs of Assignment 4.
 - Put your code in a function that takes in the number of weeks and return estimated revenue.
 
 ### Assignment 4 - Array Methods
@@ -151,8 +151,6 @@ Array methods are built specifically for arrays. They help us change the arrays 
 
 Reference: [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-_Determines whether the array contains a value_
-
 _Add an item to the end of an array:_
 
 ```javascript
@@ -161,7 +159,7 @@ var newLength = fruits.push("Orange");
 // newLength will be 3, and fruites becomes ["Apple", "Banana", "Orange"]
 ```
 
-_Remove an item from the end of an array:_
+_Determines whether the array contains a value_
 
 ```javascript
 var pets = ["cat", "dog", "bat"];
@@ -170,6 +168,8 @@ console.log(pets.includes("cat"));
 console.log(pets.includes("at"));
 // expected output: false
 ```
+
+_Remove an item from the end of an array:_
 
 ```javascript
 var last = fruits.pop(); // remove Orange (from the end)
@@ -275,7 +275,7 @@ greeting(userA); // Hi, my name is Peter Parker, my email is pparker@gmail.com
   email: "peter.parker@gmail.com",
   role: "student",
   courseId: 112233,
-  tasks = [
+  tasks: [
     { name: "Task 1", status: "Done"},
     { name: "Task 2", status: "Not Started"},
     { name: "Task 3", status: "In Progress"},
@@ -467,7 +467,7 @@ function getRandomString(length) {
   // Your code here
 }
 
-console.log(generateString(5));
+console.log(getRandomString(5));
 // example output: B5cgH
 ```
 

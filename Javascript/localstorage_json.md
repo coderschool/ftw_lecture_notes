@@ -61,7 +61,7 @@ JSON has the following rules:
   "children": [],
   "spouse": null
 }
-`"
+```
 
 The browser provides a `JSON` object with two methods.
 
@@ -72,4 +72,3 @@ To store JSON in localStorage:
 
 - You should use `JSON.stringify()` before storing it in localStorage.
 - You should use `JSON.parse()` after retrieving it from localStorage.
-```

@@ -11,6 +11,7 @@ Bootstrap offers a large collection of fundamental UI components that allow you 
 **Using CDN**
 
 - Go to the [Boostrap's Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/), put the **Starter template** in an empty `html` file.
+
 - Bootstrap relies on jQuery, but if you just need Bootstrap for laying out your app, you don't need to include those JS file. The Bootstrap JS files are needed if you'll use any of those components: Alerts, Buttons, Carousels, Collapsible content, Dropdowns, Navbar, Tooltips, Scrollspy.
 
 **Using npm**
@@ -71,7 +72,7 @@ Bootstrap 4 defaults the value of box-sizing to the `border-box`. The `border-bo
 
 ### Utilities for layout
 
-- \*\*Changing `display`: Use [display utilities](https://getbootstrap.com/docs/4.0/utilities/display/) for responsively toggling common values of the display property. Mix it with our grid system, content, or components to show or hide them across specific viewports.
+- **Changing `display`**: Use [display utilities](https://getbootstrap.com/docs/4.0/utilities/display/) for responsively toggling common values of the display property. Mix it with our grid system, content, or components to show or hide them across specific viewports.
 
 - **Flexbox options**: Most of the components are built with flexbox enabled. Should you need to add `display: flex` to an element, do so with `.d-flex`. More options here: [flexbox utilities](https://getbootstrap.com/docs/4.0/utilities/flex/)
 
